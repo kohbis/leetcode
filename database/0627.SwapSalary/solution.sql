@@ -1,7 +1,7 @@
 UPDATE
-  salary
+    salary
 SET
-  sex = CASE
+    sex = CASE
             WHEN sex = 'm' THEN 'f'
             WHEN sex = 'f' THEN 'm'
         END
