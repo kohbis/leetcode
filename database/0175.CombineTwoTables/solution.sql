@@ -1,8 +1,8 @@
-SELECT
+select
     FirstName,
     LastName,
     City,
     State
-FROM
+from
     Person p
-    LEFT JOIN Address a ON p.PersonId = a.PersonId;
+    left join Address a on p.PersonId = a.PersonId;

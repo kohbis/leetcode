@@ -1,11 +1,11 @@
-SELECT
+select
     (
-        SELECT
-            DISTINCT Salary
-        FROM
+        select
+            distinct Salary
+        from
             Employee
-        ORDER BY
-            Salary DESC
-        LIMIT
+        order by
+            Salary desc
+        limit
             1 OFFSET 1
-    ) AS SecondHighestSalary;
+    ) as SecondHighestSalary;
