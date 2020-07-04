@@ -9,14 +9,14 @@ impl Solution {
         while i_a > 0 || i_b > 0 || carry > 0 {
             if i_a > 0 {
                 i_a -= 1;
-                carry += v_a[i_a] as u8 - 48;
+                carry += v_a[i_a] as u8 - b'0';
             }
             if i_b > 0 {
                 i_b -= 1;
-                carry += v_b[i_b] as u8 - 48;
+                carry += v_b[i_b] as u8 - b'0';
             }
 
-            res.insert(0, (carry % 2 + 48) as char);
+            res.insert(0, (carry % 2 + b'0') as char);
             carry /= 2;
         }
 
