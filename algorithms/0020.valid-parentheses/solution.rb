@@ -3,7 +3,7 @@
 def is_valid(s)
   stack = []
   brackets = { '(' => ')', '{' => '}', '[' => ']' }
-  
+
   s.each_char do |c|
     if brackets.has_key?(c)
       stack.push(c)
@@ -13,6 +13,6 @@ def is_valid(s)
       return false
     end
   end
-  
+
   stack.empty?
 end
