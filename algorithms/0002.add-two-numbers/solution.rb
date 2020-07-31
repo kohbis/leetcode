@@ -25,7 +25,7 @@ def add_two_numbers(l1, l2)
     val += l2.nil? ? 0 : l2.val
 
     curt_res.next = ListNode.new(val % 10)
-    
+
     over = val >= 10 ? 1 : 0
     l1 = l1.nil? ? l1 : l1.next
     l2 = l2.nil? ? l2 : l2.next
