@@ -14,6 +14,6 @@ def longest_common_prefix(strs)
     end
     prefix = curt
   end
-  
+
   prefix
 end
