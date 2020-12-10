@@ -11,7 +11,7 @@ impl ParkingSystem {
 
     fn new(big: i32, medium: i32, small: i32) -> Self {
         ParkingSystem {
-        parking_spaces: vec![0, big, medium, small]
+            parking_spaces: vec![0, big, medium, small]
         }
     }
 
