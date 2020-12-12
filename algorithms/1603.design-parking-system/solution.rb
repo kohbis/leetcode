@@ -16,7 +16,7 @@ class ParkingSystem
 =end
   def add_car(car_type)
     return false if @parking_spaces[car_type] == 0
-      
+
     @parking_spaces[car_type] -= 1
     true
   end
