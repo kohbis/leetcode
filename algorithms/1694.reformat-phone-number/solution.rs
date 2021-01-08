@@ -31,6 +31,6 @@ impl Solution {
             parts.push(part);
         }
 
-        parts.join("-"
+        parts.join("-")
     }
 })
