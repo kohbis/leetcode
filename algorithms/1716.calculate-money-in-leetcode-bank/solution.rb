@@ -1,22 +1,18 @@
 # @param {Integer} n
 # @return {Integer}
 def total_money(n)
-  res = 0
-  dollars, day = 1, 1
+  total = 0
+  week, extra_day = n / 7, n % 7
 
-  while n > 0
-    res += dollars
+  # sum of first-week (1..7).to_a.sum = 28
+  total += 28 * week
+  # 0(0) + 1(1) + 2(3) + 3(6) + 4(10) ...
+  total += week * (week - 1) / 2 * 7
+  # Monday of Nth week $money is $N
+  total += week * extra_day
+  # 0(0) + 1(1) + 2(3) + 3(6) + 4(10) ...
+  total += extra_day * (extra_day + 1) / 2
 
-    dollars += 1
-    day += 1
-
-    if day > 7
-      day = 1
-      dollars -= 6
-    end
-
-    n -= 1
-  end
-
-  res
+  total
 end
+
