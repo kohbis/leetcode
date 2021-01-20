@@ -11,7 +11,7 @@
 def delete_duplicates(head)
   res = head
 
-  while head && head.next
+  while head&.next
     if head.val == head.next.val
       head.next = head.next.next
     else
