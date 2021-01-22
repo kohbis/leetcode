@@ -2,11 +2,11 @@
 # @param {Integer} first
 # @return {Integer[]}
 def decode(encoded, first)
-  encoded.unshift(first)
+  res = [first]
 
-  for i in 0...encoded.size-1
-    encoded[i+1] = encoded[i] ^ encoded[i+1]
+  for i in 0...encoded.size
+    res << (res[i] ^ encoded[i])
   end
 
-  encoded
+  res
 end
