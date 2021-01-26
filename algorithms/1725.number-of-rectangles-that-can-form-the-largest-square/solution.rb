@@ -1,9 +1,19 @@
 # @param {Integer[][]} rectangles
 # @return {Integer}
 def count_good_rectangles(rectangles)
-  hash = Hash.new(0)
+  max_len = 0
+  max_len_count = 0
+
   rectangles.each do |r|
-    hash[r.min] += 1
+    min_len = r.min
+
+    if min_len > max_len
+      max_len = min_len
+      max_len_count = 1
+    elsif min_len == max_len
+      max_len_count += 1
+    end
   end
-  hash.max[1]
+
+  max_len_count
 end
