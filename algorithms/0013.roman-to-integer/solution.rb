@@ -16,7 +16,7 @@ def roman_to_int(s)
     'CD' => 400,
     'CM' => 900,
   }
-  
+
   res = 0
   i = 0
   while i < s.length
