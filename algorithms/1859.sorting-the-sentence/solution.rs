@@ -3,11 +3,12 @@ impl Solution {
         let mut words = s
             .split_whitespace()
             .map(|word| {
-                let mut letters = word.chars().collect::<Vec<char>>();
-                let idx = letters.pop().unwrap();
-                (idx, letters.iter().collect::<String>())
+                (
+                    word[word.len() - 1..].parse::<i32>().unwrap(),
+                    word[..word.len() - 1].to_string(),
+                )
             })
-            .collect::<Vec<(char, String)>>();
+            .collect::<Vec<(i32, String)>>();
 
         words.sort_by(|a, b| a.0.cmp(&b.0));
         words
