@@ -7,6 +7,7 @@ impl Solution {
                 for c in b..=n {
                     if a * a + b * b == c * c {
                         count += 2;
+                        break;
                     }
                 }
             }
