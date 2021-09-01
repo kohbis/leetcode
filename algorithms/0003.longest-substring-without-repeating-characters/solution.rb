@@ -1,18 +1,18 @@
 # @param {String} s
 # @return {Integer}
 def length_of_longest_substring(s)
-  return s.size if s.size < 2
-
-  longest, curt = 0, []
+  curr = []
+  longest = 0
 
   s.each_char do |c|
-    if curt.include?(c)
-      longest = [longest, curt.size].max
-      idx = curt.index(c)
-      curt = curt[idx+1..-1]
+    if curr.include?(c)
+      idx = curr.index(c)
+      curr = curr[(idx + 1)..-1]
     end
-    curt << c
+
+    curr.push(c)
+    longest = [longest, curr.size].max
   end
 
-  [longest, curt.size].max
+  longest
 end
