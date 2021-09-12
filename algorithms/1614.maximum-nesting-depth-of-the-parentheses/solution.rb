@@ -1,4 +1,4 @@
- # @param {String} s
+# @param {String} s
 # @return {Integer}
 def max_depth(s)
   max, current = 0, 0

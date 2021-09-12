@@ -21,4 +21,3 @@ def generate_combination(candidates, target, current = [], index = 0, results = 
 
   results
 end
-

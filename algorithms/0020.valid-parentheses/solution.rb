@@ -2,7 +2,7 @@
 # @return {Boolean}
 def is_valid(s)
   stack = []
-  brackets = { '(' => ')', '{' => '}', '[' => ']' }
+  brackets = { "(" => ")", "{" => "}", "[" => "]" }
 
   s.each_char do |c|
     if brackets.has_key?(c)

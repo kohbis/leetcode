@@ -7,4 +7,3 @@ def first_uniq_char(s)
   end
   ans
 end
-

@@ -7,12 +7,12 @@ def guessNumber(n)
   left, right = 0, n
 
   loop {
-    mid = left  + (right - left) / 2
+    mid = left + (right - left) / 2
 
     case guess(mid)
-    when 0  then return mid
+    when 0 then return mid
     when -1 then right = mid - 1
-    when 1  then left = mid + 1
+    when 1 then left = mid + 1
     end
   }
 end

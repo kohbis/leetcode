@@ -5,7 +5,7 @@ def search(nums, target)
   ## Using Array#bsearch_index
   # nums.bsearch_index {|x| target - x } || -1
 
-  left, right = 0, nums.size-1
+  left, right = 0, nums.size - 1
   while left <= right
     mid = (left + right) / 2
 
@@ -19,4 +19,3 @@ def search(nums, target)
   end
   -1
 end
-

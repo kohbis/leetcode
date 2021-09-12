@@ -8,7 +8,7 @@ def nearest_valid_point(x, y, points)
   points.each_with_index do |point, idx|
     px, py = point
     if x == px || y == py
-      dists << [(x-px).abs + (y-py).abs, idx]
+      dists << [(x - px).abs + (y - py).abs, idx]
     end
   end
 

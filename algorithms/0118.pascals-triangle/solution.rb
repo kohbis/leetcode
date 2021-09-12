@@ -10,7 +10,7 @@ def generate(num_rows)
 
     # calculation
     (1...i).each do |j|
-      res[i][j] = res[i-1][j-1] + res[i-1][j]
+      res[i][j] = res[i - 1][j - 1] + res[i - 1][j]
     end
   end
 

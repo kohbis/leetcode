@@ -2,7 +2,7 @@
 # @return {Integer}
 def max_power(s)
   max_count = 0
-  previous_character = ''
+  previous_character = ""
 
   count = 0
   s.chars.each do |c|

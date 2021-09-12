@@ -7,7 +7,6 @@ class MinStack
     @stack = []
   end
 
-
 =begin
     :type x: Integer
     :rtype: Void
@@ -16,14 +15,12 @@ class MinStack
     @stack.push(x)
   end
 
-
 =begin
     :rtype: Void
 =end
   def pop()
     @stack.pop
   end
-
 
 =begin
     :rtype: Integer
@@ -32,15 +29,12 @@ class MinStack
     @stack[-1]
   end
 
-
 =begin
     :rtype: Integer
 =end
   def get_min()
     @stack.min
   end
-
-
 end
 
 # Your MinStack object will be instantiated and called as such:
@@ -49,4 +43,3 @@ end
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.get_min()
-

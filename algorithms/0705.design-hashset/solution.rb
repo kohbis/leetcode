@@ -7,7 +7,6 @@ class MyHashSet
     @container = Array.new()
   end
 
-
 =begin
   :type key: Integer
   :rtype: Void
@@ -15,7 +14,6 @@ class MyHashSet
   def add(key)
     @container[key] = true
   end
-
 
 =begin
   :type key: Integer
@@ -25,7 +23,6 @@ class MyHashSet
     @container[key] = nil
   end
 
-
 =begin
   Returns true if this set contains the specified element
   :type key: Integer
@@ -34,8 +31,6 @@ class MyHashSet
   def contains(key)
     !!@container[key]
   end
-
-
 end
 
 # Your MyHashSet object will be instantiated and called as such:
@@ -43,4 +38,3 @@ end
 # obj.add(key)
 # obj.remove(key)
 # param_3 = obj.contains(key)
-

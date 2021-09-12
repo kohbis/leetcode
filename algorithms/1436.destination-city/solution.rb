@@ -8,6 +8,5 @@ def dest_city(paths)
     # destinations
     b << path[1]
   end
-  b.find {|d| !a.include?(d) }
+  b.find { |d| !a.include?(d) }
 end
-

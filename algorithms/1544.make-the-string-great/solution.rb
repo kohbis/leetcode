@@ -14,11 +14,10 @@ end
 
 class String
   def is_upper?
-    self >= 'A' && 'Z' >= self
+    self >= "A" && "Z" >= self
   end
-  
+
   def is_lower?
-    self >= 'a' && 'z' >= self
+    self >= "a" && "z" >= self
   end
 end
-

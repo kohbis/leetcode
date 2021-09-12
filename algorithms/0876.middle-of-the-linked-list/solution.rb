@@ -11,11 +11,10 @@
 # @return {ListNode}
 def middle_node(head)
   tmp, i = [], 0
-  while(head) do
+  while (head)
     tmp[i] = head.val
     i += 1
     head = head.next
   end
-  tmp[i/2..-1]
+  tmp[i / 2..-1]
 end
-

@@ -8,7 +8,6 @@ def climb_stairs(n)
   # a
 
   a = [1, 1]
-  (2..n).each {|i| a[i] = a[i-2] + a[i-1] }
+  (2..n).each { |i| a[i] = a[i - 2] + a[i - 1] }
   a[-1]
 end
-

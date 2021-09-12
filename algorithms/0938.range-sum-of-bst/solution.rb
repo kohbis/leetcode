@@ -14,6 +14,6 @@
 def range_sum_bst(root, l, r)
   res = 0
   return res if root.nil?
-  res = root.val if  l <= root.val && root.val <= r
+  res = root.val if l <= root.val && root.val <= r
   res + range_sum_bst(root.left, l, r) + range_sum_bst(root.right, l, r)
 end

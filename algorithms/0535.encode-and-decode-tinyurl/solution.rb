@@ -1,5 +1,5 @@
-SEED     = [*('a'..'z'), *('A'..'Z'), *('0'..'9')]
-KEY_LEN  = 6
+SEED = [*("a".."z"), *("A".."Z"), *("0".."9")]
+KEY_LEN = 6
 BASE_URL = "http://tinyurl.com/"
 
 @urls = {}
@@ -35,7 +35,5 @@ def decode(shortUrl)
   @urls[key]
 end
 
-
 # Your functions will be called as such:
 # decode(encode(url))
-

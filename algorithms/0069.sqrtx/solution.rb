@@ -3,4 +3,3 @@
 def my_sqrt(x)
   Math.sqrt(x).floor
 end
-

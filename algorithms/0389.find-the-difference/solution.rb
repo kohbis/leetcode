@@ -3,6 +3,6 @@
 # @return {Character}
 def find_the_difference(s, t)
   letters = t.chars
-  s.each_char {|c| letters.delete_at(letters.find_index(c)) }
+  s.each_char { |c| letters.delete_at(letters.find_index(c)) }
   letters[0]
 end

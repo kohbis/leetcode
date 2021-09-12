@@ -14,4 +14,3 @@ def can_construct(ransom_note, magazine)
   end
   can
 end
-

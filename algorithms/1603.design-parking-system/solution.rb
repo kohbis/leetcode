@@ -9,7 +9,6 @@ class ParkingSystem
     @parking_spaces = [0, big, medium, small]
   end
 
-
 =begin
   :type car_type: Integer
   :rtype: Boolean
@@ -20,8 +19,6 @@ class ParkingSystem
     @parking_spaces[car_type] -= 1
     true
   end
-
-
 end
 
 # Your ParkingSystem object will be instantiated and called as such:

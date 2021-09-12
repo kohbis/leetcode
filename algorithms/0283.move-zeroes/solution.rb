@@ -7,7 +7,7 @@ def move_zeroes(nums)
       cnt += 1
     else
       nums[idx] = 0
-      nums[idx-cnt] = n
+      nums[idx - cnt] = n
     end
   end
 end

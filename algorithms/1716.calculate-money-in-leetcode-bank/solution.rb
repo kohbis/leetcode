@@ -15,4 +15,3 @@ def total_money(n)
 
   total
 end
-

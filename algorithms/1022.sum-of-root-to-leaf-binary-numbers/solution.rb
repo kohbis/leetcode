@@ -11,7 +11,7 @@
 # @return {Integer}
 def sum_root_to_leaf(root)
   @sum = 0
-  dfs(root, '') if root
+  dfs(root, "") if root
   @sum
 end
 

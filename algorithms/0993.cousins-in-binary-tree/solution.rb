@@ -36,4 +36,3 @@ def parent_and_depth(root, target, parent, depth)
   right_parent, right_depth = parent_and_depth(root.right, target, root, depth)
   return [right_parent, right_depth] if right_depth
 end
-

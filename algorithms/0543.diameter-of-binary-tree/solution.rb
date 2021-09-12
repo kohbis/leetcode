@@ -24,4 +24,3 @@ def depth(node)
 
   [left, right].max + 1
 end
-

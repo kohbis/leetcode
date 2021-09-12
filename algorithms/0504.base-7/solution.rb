@@ -18,4 +18,3 @@ def convert_to_base7(num)
   res.unshift("-") if num < 0
   res.join
 end
-

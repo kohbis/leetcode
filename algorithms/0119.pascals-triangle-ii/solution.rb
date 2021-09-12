@@ -10,7 +10,7 @@ def get_row(row_index)
 
     # calculation
     (1...i).each do |j|
-      rows[i][j] = rows[i-1][j-1] + rows[i-1][j]
+      rows[i][j] = rows[i - 1][j - 1] + rows[i - 1][j]
     end
   end
 

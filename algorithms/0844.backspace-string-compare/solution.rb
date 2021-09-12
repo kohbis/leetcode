@@ -1,7 +1,7 @@
 def string_builder(str)
   arr = []
   str.chars.each do |char|
-    if '#' == char
+    if "#" == char
       arr.pop
     else
       arr.push(char)
@@ -16,4 +16,3 @@ end
 def backspace_compare(s, t)
   string_builder(s) == string_builder(t)
 end
-

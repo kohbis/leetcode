@@ -12,7 +12,7 @@
 # @return {ListNode}
 def merge_two_lists(l1, l2)
   res = []
-  while !l1.nil? || !l2.nil? do
+  while !l1.nil? || !l2.nil?
     res << l1.val unless l1.nil?
     res << l2.val unless l2.nil?
 

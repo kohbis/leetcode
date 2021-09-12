@@ -17,4 +17,3 @@ def get_decimal_value(head)
   end
   decimal_value
 end
-

@@ -17,5 +17,5 @@ def subdomain_visits(cpdomains)
     end
   end
 
-  hash.map {|k, v| [v, k].join(" ") }
+  hash.map { |k, v| [v, k].join(" ") }
 end

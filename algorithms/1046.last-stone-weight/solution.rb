@@ -11,4 +11,3 @@ def last_stone_weight(stones)
     stones.push(diff) unless diff == 0
   end
 end
-

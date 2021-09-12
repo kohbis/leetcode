@@ -7,6 +7,5 @@ def string_shift(s, shift)
     total += val[0].zero? ? val[1] : -val[1]
   end % s.length
 
-  part.zero? ? s : s[part..-1] + s[0..part-1]
+  part.zero? ? s : s[part..-1] + s[0..part - 1]
 end
-

@@ -7,7 +7,7 @@ def maximum_wealth(accounts)
   max = 0
   accounts.each do |a|
     sum = 0
-    a.each {|n| sum += n }
+    a.each { |n| sum += n }
     max = sum if sum > max
   end
   max

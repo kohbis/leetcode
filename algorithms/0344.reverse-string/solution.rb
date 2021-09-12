@@ -4,8 +4,8 @@ def reverse_string(s)
   # It's lazy
   # s.reverse!
 
-  # in-place 
-  i, j = 0, s.size-1
+  # in-place
+  i, j = 0, s.size - 1
   while i < j
     s[i], s[j] = s[j], s[i]
     i += 1

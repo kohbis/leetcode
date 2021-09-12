@@ -8,7 +8,7 @@ def balanced_string_split(s)
     else
       cnt -= 1
     end
-    res += 1 if cnt == 0 
+    res += 1 if cnt == 0
   end
   res
 end

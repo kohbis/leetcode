@@ -15,7 +15,7 @@ def day_of_year(date)
     30, # Sept.
     31, # Oct.
     30, # Nov.
-    31  # Dec.
+    31,  # Dec.
   ]
   days[2] = 29 if leap_year?(year)
 
@@ -26,4 +26,3 @@ end
 def leap_year?(year)
   (year % 4 == 0) && !(year % 100 == 0) || (year % 400 == 0)
 end
-

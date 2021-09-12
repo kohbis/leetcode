@@ -11,5 +11,5 @@ def count_odds(low, high)
     sum += 1
   end
 
-  sum   
+  sum
 end

@@ -7,7 +7,6 @@ class SubrectangleQueries
     @rectangle = rectangle
   end
 
-
 =begin
   :type row1: Integer
   :type col1: Integer
@@ -24,7 +23,6 @@ class SubrectangleQueries
     end
   end
 
-
 =begin
   :type row: Integer
   :type col: Integer
@@ -33,8 +31,6 @@ class SubrectangleQueries
   def get_value(row, col)
     @rectangle[row][col]
   end
-
-
 end
 
 # Your SubrectangleQueries object will be instantiated and called as such:

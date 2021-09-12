@@ -5,8 +5,8 @@ def find_words(words)
   words.select do |word|
     word_chars = word.downcase.chars
 
-    word_chars.all? {|c| rows[0].include?(c) } ||
-      word_chars.all? {|c| rows[1].include?(c) } ||
-      word_chars.all? {|c| rows[2].include?(c) }
+    word_chars.all? { |c| rows[0].include?(c) } ||
+      word_chars.all? { |c| rows[1].include?(c) } ||
+      word_chars.all? { |c| rows[2].include?(c) }
   end
 end

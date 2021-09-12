@@ -14,7 +14,7 @@ def increasing_bst(root)
 
   for i in 0...nodes.size
     nodes[i].left = nil
-    nodes[i].right = nodes[i+1]
+    nodes[i].right = nodes[i + 1]
   end
 
   nodes[0]

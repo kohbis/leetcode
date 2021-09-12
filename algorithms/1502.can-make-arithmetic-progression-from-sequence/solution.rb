@@ -7,8 +7,8 @@ def can_make_arithmetic_progression(arr)
   ## calc each combinations ##
   arr.sort!
   diff = arr[0] - arr[1]
-  (1...arr.size-1).each do |i|
-    return false unless diff == arr[i] - arr[i+1]
+  (1...arr.size - 1).each do |i|
+    return false unless diff == arr[i] - arr[i + 1]
   end
   # default
   true

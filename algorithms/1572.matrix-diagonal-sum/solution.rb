@@ -11,7 +11,7 @@ def diagonal_sum(mat)
   i -= 1
 
   while i >= 0
-    sum += mat[i][i] + mat[i][-i-1] + mat[-i-1][i] + mat[-i-1][-i-1]
+    sum += mat[i][i] + mat[i][-i - 1] + mat[-i - 1][i] + mat[-i - 1][-i - 1]
     i -= 1
   end
 

@@ -20,4 +20,3 @@ def self_dividing_numbers(left, right)
 
   res
 end
-

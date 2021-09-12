@@ -7,4 +7,3 @@ def busy_student(start_time, end_time, query_time)
     res += start_time[i] <= query_time && query_time <= end_time[i] ? 1 : 0
   end
 end
-

@@ -18,4 +18,3 @@ def is_isomorphic(s, t)
   values = hash.values.sort
   values.size == values.uniq.size
 end
-

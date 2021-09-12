@@ -16,4 +16,3 @@ def maximum_units(box_types, truck_size)
 
   res
 end
-

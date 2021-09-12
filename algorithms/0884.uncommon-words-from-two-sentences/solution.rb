@@ -10,6 +10,5 @@ def uncommon_from_sentences(a, b)
     end
   end
 
-  hash.select {|_, v| v == 1}.keys
+  hash.select { |_, v| v == 1 }.keys
 end
-
