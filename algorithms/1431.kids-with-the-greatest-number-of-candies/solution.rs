@@ -3,10 +3,9 @@ impl Solution {
         let max_candies = candies.iter().max().unwrap();
         let mut res: Vec<bool> = Vec::with_capacity(candies.len());
 
-        candies.iter()
-            .map(|candy| {
-                candy + extra_candies >= *max_candies
-            })
+        candies
+            .iter()
+            .map(|candy| candy + extra_candies >= *max_candies)
             .collect()
     }
 }

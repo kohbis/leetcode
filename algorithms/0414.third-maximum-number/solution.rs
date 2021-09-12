@@ -6,9 +6,9 @@ impl Solution {
 
         let len = nums.len();
         if len < 3 {
-            nums[len-1]
+            nums[len - 1]
         } else {
-            nums[len-3]
+            nums[len - 3]
         }
     }
 }

@@ -3,7 +3,7 @@ impl Solution {
         let mut negative_count: i32 = 0;
         for n in nums {
             if n == 0 {
-                return 0
+                return 0;
             }
             if 0 > n {
                 negative_count += 1

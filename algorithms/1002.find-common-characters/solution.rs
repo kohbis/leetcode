@@ -12,11 +12,12 @@ impl Solution {
         for i in 1..a.len() {
             let word = &a[i];
             for (key, value) in count_map.iter_mut() {
-                let count = word.chars()
-                                .collect::<Vec<char>>()
-                                .iter()
-                                .filter(|&x| x == key)
-                                .count();
+                let count = word
+                    .chars()
+                    .collect::<Vec<char>>()
+                    .iter()
+                    .filter(|&x| x == key)
+                    .count();
 
                 *value = std::cmp::min(*value, count);
             }

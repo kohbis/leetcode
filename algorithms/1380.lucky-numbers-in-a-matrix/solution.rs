@@ -1,5 +1,5 @@
 impl Solution {
-    pub fn lucky_numbers (matrix: Vec<Vec<i32>>) -> Vec<i32> {
+    pub fn lucky_numbers(matrix: Vec<Vec<i32>>) -> Vec<i32> {
         let row_len = matrix[0].len();
 
         let mut row_mins: Vec<i32> = Vec::new();

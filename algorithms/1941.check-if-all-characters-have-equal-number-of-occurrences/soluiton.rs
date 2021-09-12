@@ -7,6 +7,10 @@ impl Solution {
             *counts.entry(c).or_insert(0) += 1;
         }
 
-        counts.into_iter().map(|(_, n)| n).collect::<HashSet<i32>>().len() == 1
+        counts
+            .into_iter()
+            .map(|(_, n)| n)
+            .collect::<HashSet<i32>>()
+            .len() == 1
     }
 }

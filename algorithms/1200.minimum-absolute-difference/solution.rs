@@ -3,7 +3,7 @@ impl Solution {
         let mut res: Vec<Vec<i32>> = vec![];
         let mut min_diff: i32 = -1;
         let mut arr: Vec<i32> = arr.clone();
-        
+
         arr.sort();
 
         for w in arr.windows(2) {

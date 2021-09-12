@@ -7,13 +7,13 @@ impl Solution {
         let chars = pattern.chars().collect::<Vec<char>>();
 
         if words.len() != chars.len() {
-            return false
+            return false;
         }
 
         for (i, c) in chars.iter().enumerate() {
             if map.contains_key(&c) {
                 if map[c] != words[i] {
-                    return false
+                    return false;
                 }
             } else {
                 map.insert(c, words[i]);
@@ -27,4 +27,3 @@ impl Solution {
         map.values().len() == values.len()
     }
 }
-

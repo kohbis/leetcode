@@ -4,7 +4,7 @@ impl Solution {
 
         let mut max_count: i32 = 0;
         let mut previous_character: char = '.';
-        
+
         let mut count: i32 = 0;
         for c in s.chars() {
             if previous_character == c {

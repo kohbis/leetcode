@@ -2,8 +2,7 @@ impl Solution {
     pub fn day_of_year(date: String) -> i32 {
         let year_month_day: Vec<i32> = date.split("-").map(|s| s.parse::<i32>().unwrap()).collect();
         let mut days: Vec<i32> = vec![
-            0,
-            31, // Jan.
+            0, 31, // Jan.
             28, // Feb.
             31, // Mar.
             30, // Apr.

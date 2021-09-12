@@ -8,7 +8,7 @@ impl Solution {
         let len_90percent: usize = len * 9 / 10;
 
         let mut sum: i32 = 0;
-        for i in len_5percent..(len_5percent+len_90percent) {
+        for i in len_5percent..(len_5percent + len_90percent) {
             sum += arr[i];
         }
 

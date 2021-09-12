@@ -3,11 +3,18 @@ impl Solution {
         let mut res: i64 = x as i64;
 
         // reverse
-        res = res.abs().to_string().chars().rev().collect::<String>().parse().unwrap();
+        res = res
+            .abs()
+            .to_string()
+            .chars()
+            .rev()
+            .collect::<String>()
+            .parse()
+            .unwrap();
 
         // resign
         if x < 0 {
-          res = res * -1
+            res = res * -1
         }
 
         // check for i32 overflow

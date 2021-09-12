@@ -11,7 +11,7 @@ impl Solution {
         let diff = reorder[0] - reorder[1];
         for i in 1..(arr.len() - 1) {
             if diff != reorder[i] - reorder[i + 1] {
-                return false
+                return false;
             }
         }
 

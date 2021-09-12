@@ -6,7 +6,7 @@ impl Solution {
 
         let mut i: usize = 1;
         while i < a.len() {
-            if a[i] <= a[i-1] {
+            if a[i] <= a[i - 1] {
                 break;
             }
             i += 1;
@@ -17,7 +17,7 @@ impl Solution {
         }
 
         while i < a.len() {
-            if a[i] >= a[i-1] {
+            if a[i] >= a[i - 1] {
                 return false;
             }
             i += 1;

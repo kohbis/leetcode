@@ -8,8 +8,7 @@ impl Solution {
                 res.insert(0, '.');
             }
         }
-        
+
         res
     }
 }
-

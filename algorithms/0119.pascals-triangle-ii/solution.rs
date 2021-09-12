@@ -4,11 +4,11 @@ impl Solution {
 
         for i in 1..=row_index as usize {
             // init row
-            rows.push(vec![1; i+1]);
+            rows.push(vec![1; i + 1]);
 
             // calculation
             for j in 1..i {
-                rows[i][j] = rows[i-1][j-1] + rows[i-1][j];
+                rows[i][j] = rows[i - 1][j - 1] + rows[i - 1][j];
             }
         }
 

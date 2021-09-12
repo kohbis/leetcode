@@ -9,16 +9,9 @@ impl Solution {
         let mut rank: HashMap<i32, i32> = sorted_scores
             .iter()
             .enumerate()
-            .map(|(idx, &score)| {
-                (score, idx as i32 + 1)
-            })
+            .map(|(idx, &score)| (score, idx as i32 + 1))
             .collect();
 
-        arr
-            .iter()
-            .map(|score| {
-                rank[score]
-            })
-            .collect()
+        arr.iter().map(|score| rank[score]).collect()
     }
 }

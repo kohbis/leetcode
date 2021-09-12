@@ -14,7 +14,7 @@ impl Solution {
         }
 
         for n in short_list {
-            if let Some(idx) = long_list.iter().position(|&x| x == n ) {
+            if let Some(idx) = long_list.iter().position(|&x| x == n) {
                 res.push(n);
                 long_list.remove(idx);
             }

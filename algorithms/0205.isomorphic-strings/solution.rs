@@ -4,7 +4,7 @@ impl Solution {
         let mut map = HashMap::new();
 
         if s.len() != t.len() {
-            return false
+            return false;
         }
 
         let s_chars = s.chars().collect::<Vec<char>>();
@@ -13,7 +13,7 @@ impl Solution {
         for (i, c) in s_chars.iter().enumerate() {
             if map.contains_key(&c) {
                 if map[c] != t_chars[i] {
-                    return false
+                    return false;
                 }
             } else {
                 map.insert(c, t_chars[i]);
@@ -27,4 +27,3 @@ impl Solution {
         map.values().len() == values.len()
     }
 }
-

@@ -8,9 +8,9 @@ impl Solution {
         for n in arr {
             let entry = map.entry(n).or_insert(0);
             *entry += 1;
-            
+
             if *entry as f32 > quarter {
-                return n
+                return n;
             }
         }
 

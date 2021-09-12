@@ -9,7 +9,7 @@ impl Solution {
 
             // row
             for cell in matrix[ri].iter_mut() {
-               *cell += 1;
+                *cell += 1;
             }
             // column
             for row in matrix.iter_mut() {
@@ -24,4 +24,3 @@ impl Solution {
         count
     }
 }
-

@@ -8,8 +8,7 @@ impl Solution {
                 }
             }
         }
-        
+
         res
     }
 }
-

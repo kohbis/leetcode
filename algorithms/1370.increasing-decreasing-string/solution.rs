@@ -19,7 +19,7 @@ impl Solution {
             for c in additions.into_iter() {
                 res.push(c);
 
-                let index = seeds.iter().position(|x| *x == c ).unwrap();
+                let index = seeds.iter().position(|x| *x == c).unwrap();
                 seeds.remove(index);
             }
 

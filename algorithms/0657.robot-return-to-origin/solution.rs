@@ -12,7 +12,6 @@ impl Solution {
             map.insert(*d, counts);
         }
 
-        map.get(&'L') == map.get(&'R')
-        && map.get(&'U') == map.get(&'D')
+        map.get(&'L') == map.get(&'R') && map.get(&'U') == map.get(&'D')
     }
 }

@@ -4,7 +4,11 @@ impl Solution {
 
         s.chars()
             .map(|c| {
-                if c.is_alphabetic() { letters.pop().unwrap() } else { c }
+                if c.is_alphabetic() {
+                    letters.pop().unwrap()
+                } else {
+                    c
+                }
             })
             .collect::<String>()
     }

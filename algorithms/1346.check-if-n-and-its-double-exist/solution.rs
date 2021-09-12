@@ -4,14 +4,14 @@ impl Solution {
         let mut map: HashMap<i32, bool> = HashMap::new();
 
         for i in arr {
-            if map.contains_key(&(i*2)) {
-                if map[&(i*2)] {
+            if map.contains_key(&(i * 2)) {
+                if map[&(i * 2)] {
                     return true;
                 }
             }
 
-            if (i%2 == 0) && map.contains_key(&(i/2)) {
-                if map[&(i/2)] {
+            if (i % 2 == 0) && map.contains_key(&(i / 2)) {
+                if map[&(i / 2)] {
                     return true;
                 }
             }

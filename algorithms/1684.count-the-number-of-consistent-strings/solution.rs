@@ -10,7 +10,7 @@ impl Solution {
             for c in word_chars {
                 if !allowed_chars.contains(&c) {
                     only_allowed_chars = false;
-                    break
+                    break;
                 }
             }
 

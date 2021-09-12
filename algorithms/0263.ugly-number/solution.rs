@@ -1,7 +1,7 @@
 impl Solution {
     pub fn is_ugly(num: i32) -> bool {
         if num == 0 {
-            return false
+            return false;
         }
 
         let mut n = num;
@@ -13,10 +13,10 @@ impl Solution {
             } else if n % 5 == 0 {
                 n /= 5
             } else {
-                return false
+                return false;
             }
         }
 
-        return true
+        return true;
     }
 }
