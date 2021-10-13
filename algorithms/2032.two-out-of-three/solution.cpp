@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> twoOutOfThree(vector<int> &nums1, vector<int> &nums2, vector<int> &nums3) {
+    vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
         vector<int> res;
 
         for (int i = 1; i <= 100; ++i) {
