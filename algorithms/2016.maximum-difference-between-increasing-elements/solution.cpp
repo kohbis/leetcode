@@ -1,5 +1,7 @@
 #include <vector>
 
+using namespace std;
+
 class Solution {
   public:
     int maximumDifference(vector<int>& nums) {
@@ -14,7 +16,7 @@ class Solution {
             }
         }
 
-        if (max > 0) {
+        if (0 < max) {
             return max;
         } else {
             return -1;

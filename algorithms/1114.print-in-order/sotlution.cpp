@@ -1,16 +1,19 @@
 #include <mutex>
 
+using namespace std;
+
 class Foo {
     mutex mtx_second;
     mutex mtx_third;
-public:
+
+  public:
     Foo() {
         mtx_second.lock();
         mtx_third.lock();
     }
 
     void first(function<void()> printFirst) {
-        
+
         // printFirst() outputs "first". Do not change or remove this line.
         printFirst();
         mtx_second.unlock();
