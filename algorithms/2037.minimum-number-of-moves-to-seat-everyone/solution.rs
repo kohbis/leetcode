@@ -4,10 +4,11 @@ impl Solution {
         seats.sort_unstable();
         students.sort_unstable();
 
-        seats
-            .iter()
-            .zip(students.iter())
-            .map(|(seat, student)| (seat - student).abs())
-            .sum()
+        let mut res = 0i32;
+        for i in 0..seats.len() {
+            res += (seats[i] - students[i]).abs();
+        }
+
+        res
     }
 }
