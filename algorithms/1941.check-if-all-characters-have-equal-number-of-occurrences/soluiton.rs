@@ -11,6 +11,7 @@ impl Solution {
             .into_iter()
             .map(|(_, n)| n)
             .collect::<HashSet<i32>>()
-            .len() == 1
+            .len()
+            == 1
     }
 }
