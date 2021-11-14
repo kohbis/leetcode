@@ -9,7 +9,7 @@ def merge_sort(arr)
 
   pivot = arr.size / 2
 
-  left =  merge_sort(arr[0..pivot - 1])
+  left = merge_sort(arr[0..pivot - 1])
   right = merge_sort(arr[pivot..-1])
 
   res = []
