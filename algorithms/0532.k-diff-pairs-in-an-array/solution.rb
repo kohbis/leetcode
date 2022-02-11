@@ -7,11 +7,11 @@ def find_pairs(nums, k)
   hash = Hash.new(0)
   nums.each { |n| hash[n] += 1 }
 
-  if k == 0
-    ans = hash.count { |_, v| v > 1 }
-  else
-    hash.keys.each do |n|
-      ans += 1 if hash[n + k] > 0
+  hash.each do |key, value|
+    if hash.has_key?(key + k)
+      if (k == 0 && value > 1) || k > 0
+        ans += 1
+      end
     end
   end
 
