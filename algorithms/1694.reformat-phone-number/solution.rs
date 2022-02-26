@@ -3,14 +3,19 @@ impl Solution {
         use std::collections::VecDeque;
 
         let mut parts: Vec<String> = vec![];
-        let mut nums: VecDeque<char> = number.clone().replace("-", "").replace(" ", "").chars().collect();
+        let mut nums: VecDeque<char> = number
+            .clone()
+            .replace("-", "")
+            .replace(" ", "")
+            .chars()
+            .collect();
 
         let mut three_digits = nums.len() / 3;
         let mut two_digits = match nums.len() % 3 {
             1 => {
                 three_digits -= 1;
                 2
-            },
+            }
             2 => 1,
             _ => 0,
         };
@@ -33,4 +38,4 @@ impl Solution {
 
         parts.join("-")
     }
-})
+}
