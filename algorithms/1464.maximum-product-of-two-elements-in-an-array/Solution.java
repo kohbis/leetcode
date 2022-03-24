@@ -3,7 +3,7 @@ class Solution {
         int max, secondMax;
         max = secondMax = 0;
 
-        for (int num: nums) {
+        for (int num : nums) {
             if (num > max) {
                 secondMax = max;
                 max = num;

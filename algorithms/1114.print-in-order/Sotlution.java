@@ -1,7 +1,6 @@
 import java.util.concurrent.Semaphore;
 
 class Foo {
-
     private final Semaphore second;
     private final Semaphore third;
 
@@ -11,7 +10,6 @@ class Foo {
     }
 
     public void first(Runnable printFirst) throws InterruptedException {
-
         // printFirst.run() outputs "first". Do not change or remove this line.
         printFirst.run();
         second.release();

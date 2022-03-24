@@ -13,7 +13,6 @@ class Foo {
     }
 
     void first(function<void()> printFirst) {
-
         // printFirst() outputs "first". Do not change or remove this line.
         printFirst();
         mtx_second.unlock();
