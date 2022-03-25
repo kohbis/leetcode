@@ -1,12 +1,8 @@
-select
-    id,
-    movie,
-    description,
-    rating
-from
-    cinema
-where
-    id % 2 <> 0
-    and description <> 'boring'
-order by
-    rating desc;
+SELECT id,
+       movie,
+       description,
+       rating
+FROM cinema
+WHERE id % 2 <> 0
+  AND description <> 'boring'
+ORDER BY rating DESC;

@@ -1,11 +1,7 @@
-select
-    t.Request_at Day,
-    round(sum(t.Status != "completed") / count(*), 2) as "Cancellation Rate"
-from
-    Trips t
-    join Users u on t.Client_Id = u.Users_Id and u.Banned = 'No'
-where
-    t.Request_at between '2013-10-01' and '2013-10-03'
-group by
-    t.Request_at
-
+SELECT t.Request_at DAY,
+                    round(sum(t.Status != "completed") / count(*), 2) AS "Cancellation Rate"
+FROM Trips t
+JOIN Users u ON t.Client_Id = u.Users_Id
+AND u.Banned = 'No'
+WHERE t.Request_at BETWEEN '2013-10-01' AND '2013-10-03'
+GROUP BY t.Request_at

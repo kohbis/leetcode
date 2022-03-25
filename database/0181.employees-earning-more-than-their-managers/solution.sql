@@ -1,7 +1,4 @@
-select
-    e1.Name as Employee
-from
-    Employee e1
-    inner join Employee e2 on e1.ManagerId = e2.Id
-where
-    e1.Salary > e2.Salary;
+SELECT e1.Name AS Employee
+FROM Employee e1
+INNER JOIN Employee e2 ON e1.ManagerId = e2.Id
+WHERE e1.Salary > e2.Salary;

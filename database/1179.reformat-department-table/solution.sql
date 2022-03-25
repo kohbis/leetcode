@@ -1,20 +1,52 @@
-select
-    id,
-    sum(case when month = 'Jan' then revenue else null end) as Jan_Revenue,
-    sum(case when month = 'Feb' then revenue else null end) as Feb_Revenue,
-    sum(case when month = 'Mar' then revenue else null end) as Mar_Revenue,
-    sum(case when month = 'Apr' then revenue else null end) as Apr_Revenue,
-    sum(case when month = 'May' then revenue else null end) as May_Revenue,
-    sum(case when month = 'Jun' then revenue else null end) as Jun_Revenue,
-    sum(case when month = 'Jul' then revenue else null end) as Jul_Revenue,
-    sum(case when month = 'Aug' then revenue else null end) as Aug_Revenue,
-    sum(case when month = 'Sep' then revenue else null end) as Sep_Revenue,
-    sum(case when month = 'Oct' then revenue else null end) as Oct_Revenue,
-    sum(case when month = 'Nov' then revenue else null end) as Nov_Revenue,
-    sum(case when month = 'Dec' then revenue else null end) as Dec_Revenue
-from
-    department
-group by
-    id
-order by
-    id;
+SELECT id,
+       sum(CASE
+               WHEN MONTH = 'Jan' THEN revenue
+               ELSE NULL
+           END) AS Jan_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Feb' THEN revenue
+               ELSE NULL
+           END) AS Feb_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Mar' THEN revenue
+               ELSE NULL
+           END) AS Mar_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Apr' THEN revenue
+               ELSE NULL
+           END) AS Apr_Revenue,
+       sum(CASE
+               WHEN MONTH = 'May' THEN revenue
+               ELSE NULL
+           END) AS May_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Jun' THEN revenue
+               ELSE NULL
+           END) AS Jun_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Jul' THEN revenue
+               ELSE NULL
+           END) AS Jul_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Aug' THEN revenue
+               ELSE NULL
+           END) AS Aug_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Sep' THEN revenue
+               ELSE NULL
+           END) AS Sep_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Oct' THEN revenue
+               ELSE NULL
+           END) AS Oct_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Nov' THEN revenue
+               ELSE NULL
+           END) AS Nov_Revenue,
+       sum(CASE
+               WHEN MONTH = 'Dec' THEN revenue
+               ELSE NULL
+           END) AS Dec_Revenue
+FROM department
+GROUP BY id
+ORDER BY id;

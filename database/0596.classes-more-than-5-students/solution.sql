@@ -1,8 +1,4 @@
-select
-    class
-from
-    courses
-group by
-    class
-having
-    count(distinct student) >= 5;
+SELECT CLASS
+FROM courses
+GROUP BY CLASS
+HAVING count(DISTINCT student) >= 5;
