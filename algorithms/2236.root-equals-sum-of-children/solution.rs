@@ -27,10 +27,10 @@ impl Solution {
                     (Some(left), Some(right)) => {
                         return left.borrow().val + right.borrow().val == node.val
                     }
-                    _ => true,
+                    _ => false,
                 }
             }
-            None => true,
+            None => false,
         }
     }
 }
