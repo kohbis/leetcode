@@ -1,19 +1,15 @@
 # @param {String[]} strs
 # @return {String}
 def longest_common_prefix(strs)
-  return "" if strs.length.zero?
+  min_len = strs.map(&:length).min
 
-  shortest = strs.min_by(&:length)
-  return "" if shortest.empty?
+  (0...min_len).each do |i|
+    c = strs[0][i]
 
-  prefix = ""
-  shortest.length.times do |i|
-    curt = shortest[0..i]
     strs.each do |s|
-      return prefix if s.index(curt) != 0
+      return s[0...i] if s[i] != c
     end
-    prefix = curt
   end
 
-  prefix
+  strs[0][0...min_len]
 end
