@@ -1,17 +1,11 @@
 func percentageLetter(s string, letter byte) int {
-	m := map[byte]int{}
+	count := 0
 	for _, b := range []byte(s) {
-		if _, ok := m[b]; ok {
-			m[b] += 1
-		} else {
-			m[b] = 1
+		if b == letter {
+			count++
 		}
 	}
-
-	if _, ok := m[letter]; ok {
-		return 100 * m[letter] / len(s)
-	}
-
-	return 0
+	return 100 * count / len(s)
 }
+
 
