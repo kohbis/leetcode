@@ -8,10 +8,10 @@ impl Solution {
         let c = c as usize;
         let mut reshaped: Vec<Vec<i32>> = vec![vec![0; c]; r];
 
-        let datas: Vec<i32> = mat.into_iter().flatten().collect();
+        let data: Vec<i32> = mat.into_iter().flatten().collect();
         for i in 0..r {
             for j in 0..c {
-                reshaped[i][j] = datas[i * c + j];
+                reshaped[i][j] = data[i * c + j];
             }
         }
 

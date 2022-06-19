@@ -4,16 +4,16 @@ func matrixReshape(mat [][]int, r int, c int) [][]int {
 		return mat
 	}
 
-	datas := []int{}
+	data := []int{}
 	for i := 0; i < len(mat); i++ {
-		datas = append(datas, mat[i]...)
+		data = append(data, mat[i]...)
 	}
 
 	reshaped := make([][]int, r)
 	for i := 0; i < r; i++ {
 		reshaped[i] = make([]int, c)
 		for j := 0; j < c; j++ {
-			reshaped[i][j] = datas[i*c+j]
+			reshaped[i][j] = data[i*c+j]
 		}
 	}
 

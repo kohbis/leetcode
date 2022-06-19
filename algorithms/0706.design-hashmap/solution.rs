@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 #[derive(Debug)]
 struct MyHashMap {
-    datas: HashMap<i32, i32>,
+    data: HashMap<i32, i32>,
 }
 
 /**
@@ -12,24 +12,24 @@ struct MyHashMap {
 impl MyHashMap {
     fn new() -> Self {
         Self {
-            datas: HashMap::new(),
+            data: HashMap::new(),
         }
     }
 
     fn put(&mut self, key: i32, value: i32) {
-        *(self.datas).entry(key).or_default() = value;
+        *(self.data).entry(key).or_default() = value;
     }
 
     fn get(&self, key: i32) -> i32 {
-        if let Some(data) = self.datas.get(&key) {
-            *data
+        if let Some(value) = self.data.get(&key) {
+            *value
         } else {
             -1
         }
     }
 
     fn remove(&mut self, key: i32) {
-        *(self.datas).entry(key).or_default() = -1;
+        *(self.data).entry(key).or_default() = -1;
     }
 }
 

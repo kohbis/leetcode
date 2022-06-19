@@ -1,6 +1,6 @@
 class MyHashMap
   def initialize()
-    @datas = {}
+    @data = {}
   end
 
 =begin
@@ -9,7 +9,7 @@ class MyHashMap
     :rtype: Void
 =end
   def put(key, value)
-    @datas[key] = value
+    @data[key] = value
   end
 
 =begin
@@ -17,7 +17,7 @@ class MyHashMap
     :rtype: Integer
 =end
   def get(key)
-    @datas[key] || -1
+    @data[key] || -1
   end
 
 =begin
@@ -25,7 +25,7 @@ class MyHashMap
     :rtype: Void
 =end
   def remove(key)
-    @datas[key] = -1
+    @data[key] = -1
   end
 end
 
