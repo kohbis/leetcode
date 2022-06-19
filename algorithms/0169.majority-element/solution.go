@@ -8,13 +8,13 @@ func majorityElement(nums []int) int {
 		}
 	}
 
-	ans := 0
+	res := 0
 	for k, v := range m {
-		if v > m[ans] {
-			ans = k
+		if v > m[res] {
+			res = k
 		}
 	}
 
-	return ans
+	return res
 
 }

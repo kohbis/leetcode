@@ -7,13 +7,13 @@ impl Solution {
             }
         }
 
-        let mut ans: Vec<i32> = vec![0; boxes.len()];
+        let mut res: Vec<i32> = vec![0; boxes.len()];
         for i in 0..boxes.len() {
             for j in &indexes {
-                ans[i] += ((j - i) as i32).abs();
+                res[i] += ((j - i) as i32).abs();
             }
         }
 
-        ans
+        res
     }
 }

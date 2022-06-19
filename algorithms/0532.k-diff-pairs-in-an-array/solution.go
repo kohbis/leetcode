@@ -8,14 +8,14 @@ func findPairs(nums []int, k int) int {
 		}
 	}
 
-	ans := 0
+	res := 0
 	for key, value := range m {
 		if _, ok := m[key+k]; ok {
 			if (k == 0 && value > 1) || k > 0 {
-				ans++
+				res++
 			}
 		}
 	}
 
-	return ans
+	return res
 }

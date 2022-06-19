@@ -11,10 +11,10 @@ def most_frequent(nums, key)
     end
   end
 
-  ans, curr = 0, 0
+  res, curr = 0, 0
   count.each do |k, v|
-    ans, curr = k, v if curr < v
+    res, curr = k, v if curr < v
   end
 
-  ans
+  res
 end

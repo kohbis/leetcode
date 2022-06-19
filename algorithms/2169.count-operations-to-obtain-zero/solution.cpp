@@ -1,7 +1,7 @@
 class Solution {
   public:
     int countOperations(int num1, int num2) {
-        int ans = 0;
+        int res = 0;
 
         while (num1 > 0 && num2 > 0) {
             if (num1 < num2) {
@@ -10,9 +10,9 @@ class Solution {
                 num1 -= num2;
             }
 
-            ans++;
+            res++;
         }
 
-        return ans;
+        return res;
     }
 };

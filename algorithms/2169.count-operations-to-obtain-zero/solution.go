@@ -1,5 +1,5 @@
 func countOperations(num1 int, num2 int) int {
-	ans := 0
+	res := 0
 
 	for num1 > 0 && num2 > 0 {
 		if num1 < num2 {
@@ -8,8 +8,8 @@ func countOperations(num1 int, num2 int) int {
 			num1 -= num2
 		}
 
-		ans++
+		res++
 	}
 
-	return ans
+	return res
 }

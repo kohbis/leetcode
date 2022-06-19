@@ -4,15 +4,15 @@ func minimumSum(num int) int {
 		return nums[i] < nums[j]
 	})
 
-	ans := 0
+	res := 0
 	for i, r := range nums {
 		n := int(r) - '0'
 		if i > 1 {
-			ans += n
+			res += n
 		} else {
-			ans += n * 10
+			res += n * 10
 		}
 	}
 
-	return ans
+	return res
 }

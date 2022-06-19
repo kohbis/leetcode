@@ -9,13 +9,13 @@
 # @param {ListNode} head
 # @return {ListNode}
 def merge_nodes(head)
-  ans = []
+  res = []
 
   sum = 0
   while head != nil
     if head.val == 0
       if sum > 0
-        ans << sum
+        res << sum
         sum = 0
       end
     else
@@ -25,5 +25,5 @@ def merge_nodes(head)
     head = head.next
   end
 
-  ans
+  res
 end

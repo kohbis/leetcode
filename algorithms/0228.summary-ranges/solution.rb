@@ -1,7 +1,7 @@
 # @param {Integer[]} nums
 # @return {String[]}
 def summary_ranges(nums)
-  ans = []
+  res = []
 
   start = 0
   nums.each_index do |i|
@@ -9,14 +9,14 @@ def summary_ranges(nums)
       next
     else
       if nums[start] == nums[i]
-        ans.push nums[start].to_s
+        res.push nums[start].to_s
       else
-        ans.push "#{nums[start]}->#{nums[i]}"
+        res.push "#{nums[start]}->#{nums[i]}"
       end
 
       start = i + 1
     end
   end
 
-  ans
+  res
 end

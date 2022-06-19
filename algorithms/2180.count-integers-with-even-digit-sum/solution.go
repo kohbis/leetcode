@@ -1,13 +1,13 @@
 func countEven(num int) int {
-	ans := 0
+	res := 0
 
 	for i := 1; i <= num; i++ {
 		if digitSum(i)%2 == 0 {
-			ans++
+			res++
 		}
 	}
 
-	return ans
+	return res
 }
 
 func digitSum(num int) int {

@@ -10,14 +10,14 @@ func increasingBST(root *TreeNode) *TreeNode {
 	values := []int{}
 	helper(root, &values)
 
-	ans := &TreeNode{Val: values[0], Left: nil, Right: nil}
-	tmp := ans
+	res := &TreeNode{Val: values[0], Left: nil, Right: nil}
+	tmp := res
 	for i := 1; i < len(values); i++ {
 		tmp.Right = &TreeNode{Val: values[i], Left: nil, Right: nil}
 		tmp = tmp.Right
 	}
 
-	return ans
+	return res
 }
 
 func helper(root *TreeNode, values *[]int) {

@@ -7,5 +7,5 @@ def num_jewels_in_stones(j, s)
   # j.chars.map { |c| cnt += s.count(c) }
   # cnt
 
-  j.chars.inject(0) { |ans, c| ans += s.count(c) }
+  j.chars.inject(0) { |res, c| res += s.count(c) }
 end

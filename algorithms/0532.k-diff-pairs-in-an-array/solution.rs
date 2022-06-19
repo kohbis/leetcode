@@ -8,15 +8,15 @@ impl Solution {
             *entry += 1;
         }
 
-        let mut ans = 0i32;
+        let mut res = 0i32;
         for (&key, &value) in map.iter() {
             if map.get(&(key + k)).is_some() {
                 if (k == 0 && value > 1) || k > 0 {
-                    ans += 1;
+                    res += 1;
                 }
             }
         }
 
-        ans
+        res
     }
 }

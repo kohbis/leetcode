@@ -11,14 +11,14 @@ impl Solution {
             }
         }
 
-        let mut ans: Vec<i32> = vec![];
+        let mut res: Vec<i32> = vec![];
         for (k, v) in count {
             if v as usize == nums_len {
-                ans.push(k);
+                res.push(k);
             }
         }
 
-        ans.sort_unstable();
-        ans
+        res.sort_unstable();
+        res
     }
 }

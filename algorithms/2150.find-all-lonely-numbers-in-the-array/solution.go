@@ -8,16 +8,16 @@ func findLonely(nums []int) []int {
 		}
 	}
 
-	ans := []int{}
+	res := []int{}
 	for key, value := range m {
 		if value == 1 {
 			_, prev := m[key-1]
 			_, next := m[key+1]
 			if !prev && !next {
-				ans = append(ans, key)
+				res = append(res, key)
 			}
 		}
 	}
 
-	return ans
+	return res
 }

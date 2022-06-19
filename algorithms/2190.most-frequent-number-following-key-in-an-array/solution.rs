@@ -10,14 +10,14 @@ impl Solution {
             }
         }
 
-        let (mut ans, mut curr) = (0, 0);
+        let (mut res, mut curr) = (0, 0);
         for (k, v) in map {
             if curr < v {
                 curr = v;
-                ans = k;
+                res = k;
             }
         }
 
-        ans
+        res
     }
 }

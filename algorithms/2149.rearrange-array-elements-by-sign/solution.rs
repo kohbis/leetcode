@@ -10,12 +10,12 @@ impl Solution {
             }
         }
 
-        let mut ans = vec![];
+        let mut res = vec![];
         for i in 0..mid {
-            ans.push(pos[i]);
-            ans.push(neg[i]);
+            res.push(pos[i]);
+            res.push(neg[i]);
         }
 
-        ans
+        res
     }
 }

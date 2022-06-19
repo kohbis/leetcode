@@ -9,9 +9,9 @@ func rearrangeArray(nums []int) []int {
 		}
 	}
 
-	ans := []int{}
+	res := []int{}
 	for i := 0; i < len(nums)/2; i++ {
-		ans = append(ans, pos[i], neg[i])
+		res = append(res, pos[i], neg[i])
 	}
-	return ans
+	return res
 }

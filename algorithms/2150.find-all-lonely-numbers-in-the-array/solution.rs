@@ -9,17 +9,17 @@ impl Solution {
             *entry += 1;
         }
 
-        let mut ans: Vec<i32> = vec![];
+        let mut res: Vec<i32> = vec![];
         for num in nums {
             if let Some(value) = hash.get(&num) {
                 if *value == 1 {
                     if !hash.contains_key(&(num + 1)) && !hash.contains_key(&(num - 1)) {
-                        ans.push(num);
+                        res.push(num);
                     }
                 }
             }
         }
 
-        ans
+        res
     }
 }

@@ -1,14 +1,14 @@
 impl Solution {
     pub fn count_even(num: i32) -> i32 {
-        let mut ans = 0i32;
+        let mut res = 0i32;
 
         for i in 1..=num {
             if Solution::digit_sum(i) % 2 == 0 {
-                ans += 1
+                res += 1
             }
         }
 
-        ans
+        res
     }
 
     fn digit_sum(x: i32) -> i32 {
