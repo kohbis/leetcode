@@ -9,5 +9,5 @@ def has_all_codes(s, k)
     set << s[i...i + k]
   end
 
-  set.size == 2**k
+  set.size == 2 ** k
 end

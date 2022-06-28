@@ -10,5 +10,5 @@ def is_power_of_four(num)
   # end
 
   b = num.to_s(2)
-  b[0] == "1" && b[1..-1].length.even? && b[1..-1].count("1") == 0
+  b[0] == '1' && b[1..-1].length.even? && b[1..-1].count('1') == 0
 end

@@ -5,9 +5,9 @@ def build_array(target, n)
   arr = []
 
   for i in 1..target[-1]
-    arr << "Push"
+    arr << 'Push'
     unless target.include?(i)
-      arr << "Pop"
+      arr << 'Pop'
     end
   end
 

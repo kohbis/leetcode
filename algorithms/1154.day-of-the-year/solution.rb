@@ -1,7 +1,7 @@
 # @param {String} date
 # @return {Integer}
 def day_of_year(date)
-  year, month, day = date.split("-").map(&:to_i)
+  year, month, day = date.split('-').map(&:to_i)
   days = [
     0,
     31, # Jan.

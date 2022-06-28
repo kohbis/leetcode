@@ -1,7 +1,7 @@
 # @param {String[]} words
 # @return {String[]}
 def find_words(words)
-  rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+  rows = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
   words.select do |word|
     word_chars = word.downcase.chars
 

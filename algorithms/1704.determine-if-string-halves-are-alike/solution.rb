@@ -1,4 +1,4 @@
-VOWELS = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+VOWELS = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
 # @param {String} s
 # @return {Boolean}

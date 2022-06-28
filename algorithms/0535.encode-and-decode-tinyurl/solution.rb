@@ -1,11 +1,11 @@
-SEED = [*("a".."z"), *("A".."Z"), *("0".."9")]
+SEED = [*('a'..'z'), *('A'..'Z'), *('0'..'9')]
 KEY_LEN = 6
-BASE_URL = "http://tinyurl.com/"
+BASE_URL = 'http://tinyurl.com/'
 
 @urls = {}
 
 def get_random
-  key = ""
+  key = ''
   KEY_LEN.times { key += SEED.sample }
 
   key
@@ -16,7 +16,7 @@ end
 # @param {string} longUrl
 # @return {string}
 def encode(longUrl)
-  key = ""
+  key = ''
   while @urls[key] || key.length == 0
     key = get_random()
   end
@@ -30,7 +30,7 @@ end
 # @param {string} shortUrl
 # @return {string}
 def decode(shortUrl)
-  key = shortUrl.gsub(BASE_URL, "")
+  key = shortUrl.gsub(BASE_URL, '')
 
   @urls[key]
 end

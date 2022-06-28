@@ -3,7 +3,7 @@
 # @return {String}
 def add_binary(a, b)
   i_a, i_b, carry = a.length, b.length, 0
-  res = ""
+  res = ''
 
   while i_a > 0 || i_b > 0 || carry > 0
     if i_a > 0

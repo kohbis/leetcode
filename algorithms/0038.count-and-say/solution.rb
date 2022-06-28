@@ -1,7 +1,7 @@
 # @param {Integer} n
 # @return {String}
 def count_and_say(n)
-  return "1" if n == 1
+  return '1' if n == 1
 
   count_and_say(n - 1)
     .chars

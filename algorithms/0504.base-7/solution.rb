@@ -4,7 +4,7 @@ def convert_to_base7(num)
   ## Lazy solution
   # num.to_s(7)
 
-  return "0" if num == 0
+  return '0' if num == 0
 
   res = []
   n = num.abs
@@ -15,6 +15,6 @@ def convert_to_base7(num)
     res.unshift(rem.to_s)
   end
 
-  res.unshift("-") if num < 0
+  res.unshift('-') if num < 0
   res.join
 end

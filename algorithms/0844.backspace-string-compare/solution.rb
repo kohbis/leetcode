@@ -1,7 +1,7 @@
 def string_builder(str)
   arr = []
   str.chars.each do |char|
-    if "#" == char
+    if '#' == char
       arr.pop
     else
       arr.push(char)

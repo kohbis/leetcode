@@ -10,6 +10,6 @@ end
 
 class String
   def is_upper?
-    self >= "A" && "Z" >= self
+    self >= 'A' && 'Z' >= self
   end
 end

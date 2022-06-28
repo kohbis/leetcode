@@ -1,7 +1,7 @@
 # @param {String} s
 # @return {String}
 def longest_nice_substring(s)
-  return "" if s.length < 2
+  return '' if s.length < 2
 
   uniqs = s.chars.sort.uniq
   # or

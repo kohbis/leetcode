@@ -5,9 +5,9 @@ def check_string(s)
 
   s.chars.each do |c|
     case c
-    when "a"
+    when 'a'
       return false if appeared
-    when "b"
+    when 'b'
       appeared = true
     end
   end

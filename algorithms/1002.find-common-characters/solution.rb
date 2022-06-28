@@ -9,5 +9,5 @@ def common_chars(a)
     count_map.keys.each { |k| count_map[k] = [count_map[k], word.count(k)].min }
   end
 
-  count_map.map { |k, v| k * v }.join.split("")
+  count_map.map { |k, v| k * v }.join.split('')
 end

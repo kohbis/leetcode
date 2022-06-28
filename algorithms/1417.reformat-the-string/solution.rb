@@ -3,7 +3,7 @@
 def reformat(s)
   alpha = []
   nums = []
-  res = ""
+  res = ''
 
   s.chars.each do |c|
     if /[[:alpha:]]/.match(c)
@@ -13,7 +13,7 @@ def reformat(s)
     end
   end
 
-  return "" if (alpha.size - nums.size).abs > 1
+  return '' if (alpha.size - nums.size).abs > 1
 
   if alpha.size > nums.size
     while alpha.any?

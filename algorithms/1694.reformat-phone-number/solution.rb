@@ -2,7 +2,7 @@
 # @return {String}
 def reformat_number(number)
   arr = []
-  nums = number.gsub(/-| /, "").chars
+  nums = number.gsub(/-| /, '').chars
 
   three_digits = nums.size / 3
   two_digits = case nums.size % 3
@@ -23,5 +23,5 @@ def reformat_number(number)
     arr << nums.shift(2).join
   end
 
-  arr.join("-")
+  arr.join('-')
 end

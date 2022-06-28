@@ -5,11 +5,11 @@ def cal_points(ops)
 
   ops.each do |op|
     case op
-    when "C"
+    when 'C'
       scores.pop
-    when "D"
+    when 'D'
       scores.push(scores.last * 2)
-    when "+"
+    when '+'
       scores.push(scores.last(2).sum)
     else
       scores.push(op.to_i)

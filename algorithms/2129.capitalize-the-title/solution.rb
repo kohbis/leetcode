@@ -12,5 +12,5 @@ def capitalize_title(title)
     end
   end
 
-  words.join(" ")
+  words.join(' ')
 end

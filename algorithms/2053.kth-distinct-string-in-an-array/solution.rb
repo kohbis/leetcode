@@ -13,5 +13,5 @@ def kth_distinct(arr, k)
   end
 
   counts = h.select { |_, v| v[0] == 1 }.sort_by { |_, v| v[1] }
-  counts.size >= k ? counts[k - 1][0] : ""
+  counts.size >= k ? counts[k - 1][0] : ''
 end
