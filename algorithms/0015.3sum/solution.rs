@@ -20,6 +20,7 @@ impl Solution {
                 if sum == 0 {
                     set.insert(vec![nums[i], nums[left], nums[right]]);
                     left += 1;
+                    right -= 1;
                 } else if sum < 0 {
                     left += 1;
                 } else {
