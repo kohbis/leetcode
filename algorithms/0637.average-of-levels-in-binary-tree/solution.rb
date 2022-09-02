@@ -10,24 +10,27 @@
 # @param {TreeNode} root
 # @return {Float[]}
 def average_of_levels(root)
-  @deepest = 0
-  # [count, sum]
-  @sums = Hash.new
+  res = []
+  nodes = []
 
-  add_val_with_level(root, 0)
+  nodes << root if root
 
-  (0..@deepest).map { |i| @sums[i][1].fdiv(@sums[i][0]).floor(5) }
-end
+  while !nodes.empty?
+    len = nodes.size
+    sum = 0.0
 
-def add_val_with_level(node, level)
-  return if node.nil?
+    len.times do
+      node = nodes.shift
+      next unless node
 
-  @deepest = [@deepest, level].max
+      sum += node.val
 
-  @sums[level] = [0, 0] unless @sums.has_key?(level)
-  @sums[level][0] += 1
-  @sums[level][1] += node.val
+      nodes << node.left if node.left
+      nodes << node.right if node.right
+    end
 
-  add_val_with_level(node.left, level + 1) if node.left
-  add_val_with_level(node.right, level + 1) if node.right
+    res << sum / len
+  end
+
+  res
 end
