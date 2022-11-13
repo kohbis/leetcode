@@ -1,7 +1,7 @@
 SELECT id,
        CASE
               WHEN p_id IS NULL THEN 'Root'
-              WHEN id in (
+              WHEN id IN (
                      SELECT p_id
                      FROM tree
               ) THEN 'Inner'

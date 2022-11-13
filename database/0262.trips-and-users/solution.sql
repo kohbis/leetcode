@@ -1,5 +1,5 @@
 SELECT t.Request_at DAY,
-  round(sum(t.Status != "completed") / count(*), 2) AS "Cancellation Rate"
+  round(sum(t.Status != "completed") / COUNT(*), 2) AS "Cancellation Rate"
 FROM Trips t
   JOIN Users u ON t.Client_Id = u.Users_Id
   AND u.Banned = 'No'

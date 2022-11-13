@@ -3,4 +3,4 @@ SELECT actor_id,
 FROM ActorDirector
 GROUP BY actor_id,
   director_id
-HAVING count(*) >= 3
+HAVING COUNT(*) >= 3

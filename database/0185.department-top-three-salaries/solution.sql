@@ -5,7 +5,7 @@ FROM Employee emp,
   Department dep
 WHERE emp.DepartmentId = dep.Id
   AND (
-    SELECT count(DISTINCT Salary)
+    SELECT COUNT(DISTINCT Salary)
     FROM Employee
     WHERE Employee.DepartmentId = dep.Id
       AND Salary > emp.Salary
