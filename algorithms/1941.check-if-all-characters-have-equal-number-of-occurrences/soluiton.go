@@ -1,16 +1,16 @@
 func areOccurrencesEqual(s string) bool {
-	counts := map[rune]int{}
+	count := map[rune]int{}
 
 	for _, r := range s {
-		if _, ok := counts[r]; ok {
-			counts[r] += 1
+		if _, ok := count[r]; ok {
+			count[r] += 1
 		} else {
-			counts[r] = 1
+			count[r] = 1
 		}
 	}
 
 	n := 0
-	for _, v := range counts {
+	for _, v := range count {
 		if n > 0 {
 			if n != v {
 				return false

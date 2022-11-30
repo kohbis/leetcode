@@ -1,7 +1,7 @@
 # @param {Integer[]} arr
 # @return {Boolean}
 def unique_occurrences(arr)
-  counts = Hash.new(0)
-  arr.each { |i| counts[i] += 1 }
-  counts.values.size == counts.values.uniq.size
+  count = Hash.new(0)
+  arr.each { |i| count[i] += 1 }
+  count.values.size == count.values.uniq.size
 end

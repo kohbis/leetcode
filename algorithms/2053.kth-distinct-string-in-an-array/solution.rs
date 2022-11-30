@@ -9,15 +9,15 @@ impl Solution {
             (*entry)[0] += 1;
         }
 
-        let mut counts: Vec<(&String, i32)> = hm
+        let mut count: Vec<(&String, i32)> = hm
             .iter()
             .filter(|(_, v)| v[0] == 1)
             .map(|(k, v)| (k, v[1]))
             .collect();
-        counts.sort_by(|a, b| a.1.cmp(&b.1));
+        count.sort_by(|a, b| a.1.cmp(&b.1));
 
-        if counts.len() >= k as usize {
-            counts[k as usize - 1].0.to_string()
+        if count.len() >= k as usize {
+            count[k as usize - 1].0.to_string()
         } else {
             "".to_string()
         }

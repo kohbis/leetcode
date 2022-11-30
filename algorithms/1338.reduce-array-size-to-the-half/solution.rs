@@ -6,17 +6,17 @@ impl Solution {
         let half = (arr.len() / 2) as i32;
         let mut hm: HashMap<i32, i32> = HashMap::new();
         for n in arr {
-            let count = hm.entry(n).or_insert(0);
-            *count += 1
+            let entry = hm.entry(n).or_insert(0);
+            *entry += 1
         }
 
-        let mut counts = Vec::from_iter(hm.values());
-        counts.sort_unstable();
+        let mut count = Vec::from_iter(hm.values());
+        count.sort_unstable();
 
         let mut set_size = 0;
         let mut sum = 0;
-        while counts.len() > 0 {
-            if let Some(v) = counts.pop() {
+        while count.len() > 0 {
+            if let Some(v) = count.pop() {
                 sum += v;
                 set_size += 1;
 
