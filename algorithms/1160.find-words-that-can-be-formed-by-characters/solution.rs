@@ -10,13 +10,13 @@ impl Solution {
             map
         }
 
-        let chars_counts = count_letters(&chars);
+        let chars_count = count_letters(&chars);
         let mut res = 0;
         'outer: for word in words {
-            let word_counts = count_letters(&word);
-            for (letter, count) in word_counts {
-                if chars_counts.contains_key(&letter) {
-                    if chars_counts[&letter] >= count {
+            let word_count = count_letters(&word);
+            for (letter, count) in word_count {
+                if chars_count.contains_key(&letter) {
+                    if chars_count[&letter] >= count {
                         continue;
                     }
                 }

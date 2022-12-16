@@ -8,8 +8,8 @@ impl Solution {
         let mut map: HashMap<char, i32> = HashMap::new();
 
         for d in directions.iter() {
-            let counts = sequences.iter().filter(|&x| x == d).count() as i32;
-            map.insert(*d, counts);
+            let count = sequences.iter().filter(|&x| x == d).count() as i32;
+            map.insert(*d, count);
         }
 
         map.get(&'L') == map.get(&'R') && map.get(&'U') == map.get(&'D')
