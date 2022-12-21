@@ -8,4 +8,3 @@ impl Solution {
         max(max_amount, (sum + 1) / 2)
     }
 }
-
