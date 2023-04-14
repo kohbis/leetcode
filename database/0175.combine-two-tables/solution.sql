@@ -1,6 +1,7 @@
-SELECT FirstName,
-  LastName,
-  City,
-  State
-FROM Person p
-  LEFT JOIN Address a ON p.PersonId = a.PersonId;
+SELECT
+  P.FirstName,
+  P.LastName,
+  P.City,
+  P.State
+FROM Person AS P
+LEFT JOIN Address AS A ON P.PersonId = A.PersonId;

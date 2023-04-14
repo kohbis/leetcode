@@ -1,4 +1,4 @@
-SELECT c.Name AS Customers
-FROM Customers c
-  LEFT JOIN Orders o ON c.Id = o.CustomerId
-WHERE o.Id IS NULL;
+SELECT c.name AS customers
+FROM customers AS c
+LEFT JOIN orders AS o ON c.id = o.customerid
+WHERE o.id IS NULL;

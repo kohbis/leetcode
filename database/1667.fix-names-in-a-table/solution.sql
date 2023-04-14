@@ -1,4 +1,5 @@
-SELECT user_id,
+SELECT
+  user_id,
   concat(
     substring(upper(name), 1, 1),
     substring(lower(name), 2)

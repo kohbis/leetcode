@@ -1,5 +1,6 @@
-SELECT t.Id
-FROM Weather t,
-  Weather y
-WHERE datediff(t.RecordDate, y.RecordDate) = 1
-  AND t.Temperature > y.Temperature;
+SELECT t.id
+FROM weather AS t,
+  weather AS y
+WHERE
+  datediff(t.recorddate, y.recorddate) = 1
+  AND t.temperature > y.temperature;
