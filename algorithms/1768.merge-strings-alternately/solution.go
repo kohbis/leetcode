@@ -1,20 +1,13 @@
 func mergeAlternately(word1 string, word2 string) string {
-	runes1 := []rune(word1)
-	runes2 := []rune(word2)
-
-	res := []string{}
-	for len(runes1) > 0 || len(runes2) > 0 {
-		if len(runes1) > 0 {
-			res = append(res, string(runes1[0]))
-			runes1 = runes1[1:]
+	res := ""
+	for i := 0; i < len(word1) || i < len(word2); i++ {
+		if i < len(word1) {
+			res += string(word1[i])
 		}
-
-		if len(runes2) > 0 {
-			res = append(res, string(runes2[0]))
-			runes2 = runes2[1:]
+		if i < len(word2) {
+			res += string(word2[i])
 		}
 	}
-
-	return strings.Join(res, "")
+	return res
 }
 

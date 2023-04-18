@@ -2,14 +2,12 @@
 # @param {String} word2
 # @return {String}
 def merge_alternately(word1, word2)
-  chars1 = word1.chars
-  chars2 = word2.chars
-
-  res = ''
-  while !chars1.empty? || !chars2.empty?
-    res += chars1.shift unless chars1.empty?
-    res += chars2.shift unless chars2.empty?
+  res = ""
+  i = 0
+  while i < word1.size || i < word2.size
+    res << word1[i] if i < word1.size
+    res << word2[i] if i < word2.size
+    i += 1
   end
-
   res
 end
