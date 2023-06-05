@@ -13,6 +13,7 @@ impl Solution {
             let (x, y) = (coordinates[i][0], coordinates[i][1]);
             if (x1 - x) * (y2 - y1) != (y1 - y) * (x2 - x1) {
                 is_straight = false;
+                break;
             }
         }
 
