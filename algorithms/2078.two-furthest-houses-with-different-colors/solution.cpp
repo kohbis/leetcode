@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     int maxDistance(vector<int>& colors) {
         int len = colors.size();
 

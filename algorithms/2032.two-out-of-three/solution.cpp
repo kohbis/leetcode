@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
         vector<int> res;
 

@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     bool makeEqual(vector<string>& words) {
         if (words.size() == 1) {
             return true;

@@ -1,5 +1,5 @@
 class Solution {
-  public:
+public:
     int countOperations(int num1, int num2) {
         int res = 0;
 

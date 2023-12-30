@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     int maximumDifference(vector<int>& nums) {
         int max;
         size_t size = nums.size();

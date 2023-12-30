@@ -1,7 +1,7 @@
 #include <climits>
 
 class Solution {
-  public:
+public:
     int reverse(int x) {
         long long res = 0;
 

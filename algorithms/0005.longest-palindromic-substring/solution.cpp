@@ -11,7 +11,7 @@ class Solution {
         return true;
     }
 
-  public:
+public:
     string longestPalindrome(string s) {
         int len = s.length();
         int longest = 0;

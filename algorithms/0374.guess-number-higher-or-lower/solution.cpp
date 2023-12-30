@@ -8,7 +8,7 @@
  */
 
 class Solution {
-  public:
+public:
     int guessNumber(int n) {
         int left = 0;
         int right = n;

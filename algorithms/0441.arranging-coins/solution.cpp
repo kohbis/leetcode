@@ -1,5 +1,5 @@
 class Solution {
-  public:
+public:
     int arrangeCoins(int n) {
         int row = 1;
 

@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     vector<int> sortArray(vector<int>& nums) { return mergeSort(nums); }
 
     vector<int> mergeSort(vector<int>& vec) {

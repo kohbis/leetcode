@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         vector<int> nums = merge(nums1, nums2);
         int mid = nums.size() / 2;

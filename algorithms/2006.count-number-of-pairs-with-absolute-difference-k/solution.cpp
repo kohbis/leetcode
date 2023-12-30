@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     int countKDifference(vector<int>& nums, int k) {
         int count = 0;
         size_t size = nums.size();

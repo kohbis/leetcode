@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-  public:
+public:
     int findMiddleIndex(vector<int>& nums) {
         int sum = 0;
         for (int i = 0; i < nums.size(); i++) {
